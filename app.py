@@ -9,10 +9,7 @@ app.config['SECRET_KEY'] = 'tcnb65421@@'
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
-    if request.method == 'POST':
-        busname = request.form.get('busname')
-        busacctnum = request.form.get('busacctnum')
-        print(busname, '\n', busacctnum)
+    
 
         
     return render_template('index.html')

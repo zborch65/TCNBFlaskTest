@@ -14,7 +14,7 @@ def main():
         busacctnum = request.form['busacctnum']
         print(busname, busacctnum)  # do something here?
 
-        f = open('static\\comments.csv', 'a')
+        f = open('static\\dataList.csv', 'a')
         f.write(",".join([busname, busacctnum]))
         f.close()
 
